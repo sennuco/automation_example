@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583596771862' stop='1583596781592'>
+    <name>phptravels.net login page</name>
+    <title>phptravels.net login page</title>
+    <test-cases>
+        <test-case start='1583596771863' status='broken' stop='1583596781576'>
+            <name>should allow user to login </name>
+            <title>should allow user to login </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-80.0.3987.132'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//*[@class="pull-right brand img-responsive"]") still not displayed after 5000ms</message>
+                <stack-trace>Error: element ("//*[@class="pull-right brand img-responsive"]") still not displayed after 5000ms
+                    at LoginPage.waitForloginPageToLoad (/Users/meicodes/Desktop/wdio/test/pageobjects/ta-login.page.js:29:26)
+                    at LoginPage.login (/Users/meicodes/Desktop/wdio/test/pageobjects/ta-login.page.js:34:12)
+                    at Context.&lt;anonymous> (/Users/meicodes/Desktop/wdio/test/specs/ta-user-login.spec.js:15:15)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

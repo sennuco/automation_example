@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583598954704' stop='1583598965319'>
+    <name>navigating to contact-us page</name>
+    <title>navigating to contact-us page</title>
+    <test-cases>
+        <test-case start='1583598954706' status='broken' stop='1583598965314'>
+            <name>should allow user to navigating contact-us page </name>
+            <title>should allow user to navigating contact-us page </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-80.0.3987.132'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//div/h3[contains(., "Contact Us")]") still not displayed after 3000ms</message>
+                <stack-trace>Error: element ("//div/h3[contains(., "Contact Us")]") still not displayed after 3000ms
+                    at ContactUS.waitForContactPageToLoad (/Users/meicodes/Desktop/wdio/test/pageobjects/ta-contactus.page.js:24:28)
+                    at Context.&lt;anonymous> (/Users/meicodes/Desktop/wdio/test/specs/ta-contact-us.spec.js:12:15)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
